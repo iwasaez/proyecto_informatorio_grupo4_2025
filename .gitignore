@@ -4,3 +4,8 @@ static_root/
 db.sqlite3
 django_proyect/settings/testing.py
 django_proyect/settings/local.py
+
+# Excluir el entorno virtual de Python
+venv/
+# Excluir la base de datos local
+db.sqlite3
