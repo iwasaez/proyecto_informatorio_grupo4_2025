@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<body>
+    <div class="wrapper">
+        <div class="box a">
+            {% block content2 %}
+            
+            {% endblock  %}
+        </div>
+        <div class="box b">
+            <h4>Bienvenido!</h4>
+            {% if request.user.is_authenticated %}
+                
+                <h5> {{request.user.username}} </h5>
+                <a href="/accounts/logout"> Salir <span><i class="fas fa-user"></i></span></a>
+                <a class='btn btn-primary' href="/create" role='button'>Crear Post</a>
+
+            {% else %}
+                <a href="/accounts/login">Acceder <span><i class="fas fa-sign-in-alt"></i></span></a>
+            {% endif %}
+        </div>
+        
+    </div>
+</body>
+{% endblock  %}
