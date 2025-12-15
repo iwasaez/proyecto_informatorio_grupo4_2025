@@ -1,4 +1,4 @@
-# proyecto_informatorio_grupo14_2021
+# proyecto_informatorio_grupo4_2025
 
 Repo de proyecto
 
